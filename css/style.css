@@ -1,0 +1,211 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Montserrat', sans-serif
+}
+.banner-section .row{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 130px;
+}
+.navbar-light .navbar-brand {
+    font-size: 24px;
+    font-weight: 800;
+    color: #000;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0 0 0);
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .nav-link.active {
+    color: rgb(0 0 0);
+}
+
+ .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color: #147ee4;
+}
+.banner-section h4{
+	font-size: 16px;
+	font-weight: 700;
+}
+.banner-section h1{
+	
+	font-size: 35px;
+	font-weight: 700;
+}
+.banner-section p{
+	
+	font-size: 16px;
+}
+.skill-section h2{
+	font-size: 22px;
+	line-height: 1.6;
+	
+}
+.skill-section h2 strong{
+	font-weight: 700;
+}
+
+.card {
+   
+    border: 0px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    margin-bottom: 30px;
+}
+
+.card-title{
+	font-size: 18px;
+	font-weight: 600px;
+	line-height: 1.6;
+	margin-bottom: .5rem;
+}
+.card a {
+    
+    text-decoration: none;
+    color: #333;
+}
+.card-body {
+    padding: 1rem 0rem;
+}
+.card a:hover {
+   
+color: #221992;
+   
+background: #fff;
+}
+.card-text:last-child {
+    margin-bottom: 0;
+    color: #0d6efd;
+    font-size: 15px;
+}
+
+.card-hover{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-hover i{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    z-index: 1;
+}
+.card-hover span{
+    position: absolute;
+    font-size: 14px;
+    top: 30px;
+    left: 30px;
+    background: #0d6efd;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.card-hoverimg{
+	
+	transition: .4s;
+}
+.card-hover:hover img{
+	transform: scale(1.1);
+	transition: .4s;
+}
+
+.card-hover::after{
+	content: "";
+    position: absolute;
+    background: #0d6efd;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0;
+    transition: .4s;
+}
+.card-hover:hover::after{
+	opacity: 1;
+}
+.card-hover a{
+	position: absolute;
+	bottom: 40%;
+	left: 50%;
+	transform: translate(-50%,40%);
+	z-index: 6;
+	transition: .5s;
+	opacity: 0;
+}
+.card-hover a:hover{
+	bottom: 50%;
+	transform: translate(-50%,50%);
+	z-index: 6;
+	opacity: 1;
+}
+.btn-check:checked + .btn-outline-primary, .btn-check:active + .btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show {
+    color: #fff;
+    
+}
+
+
+
+@media(max-width: 991px){
+	.banner-section h4 {
+    font-size: 14px;
+    font-weight: 700;
+}
+	.banner-section h1 {
+    font-size: 18px;
+    font-weight: 600;
+}
+	.banner-section p {
+    font-size: 14px;
+}
+	.banner-section .btn {
+    font-size: 14px;
+}
+	.skill-section h2 {
+    font-size: 18px;
+    line-height: 1.6;
+}
+}
+
+@media(max-width: 767px){
+	.w-100 {
+    height: 300px;
+    object-fit: cover;
+}
+.skill-section h2 {
+    font-size: 15px;
+}
+.py-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+.card-title {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: .3rem;
+}
+}
+@media(max-width: 575px){
+	.banner-section .row {
+    
+    left: 70px;
+    width: 70%;
+}
+}
+@media(max-width: 575px){
+	.banner-section .row {
+		width: 70%;
+        left: 30px;
+}
+}
